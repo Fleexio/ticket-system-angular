@@ -1,1 +1,50 @@
-<p>tickets works!</p>
+
+<h2 class="mb-3">Tickety s maximální prioritou</h2>
+
+<div *ngFor="let urgent_ticket of tickets_urgent" class="card bg-secondary shadow mb-3">
+        <div class="row pt-3 pb-3">
+            <div class="col-md-2 col-sm-12 mt-auto pl-5 mb-3 mb-md-auto">
+                    <h4 class="mb-1 d-flex"> {{ urgent_ticket.number }}</h4>
+                    <h4 class="mb-1 d-flex"> {{ urgent_ticket.priority }}</h4>
+                    <h4 class="mb-1 d-flex"> {{ urgent_ticket.category }}</h4>
+            </div>
+            <div class="col-md-6 col-sm-12 pl-5 mb-3 mb-md-auto">
+                <a routerLinkActive="" [routerLink]="" class=""><h2 class="mb-1"> {{ urgent_ticket.name }}</h2></a>
+                <div class="container p-0 m-0">
+                    <p class="d-flex"> {{ urgent_ticket.content }}</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12 text-md-center text-sm-left pl-5 mb-0 mb-md-auto mt-auto">
+                <h4 class="d-flex mb-1"> {{ urgent_ticket.date }}</h4>
+            </div>
+    
+            <div class="col-md-2 col-sm-12 text-md-center text-sm-left pl-5 mb-0 mb-md-auto mt-auto">
+                <h4 class="d-flex mb-1"> {{ urgent_ticket.creator }}</h4>
+            </div>
+        </div>
+</div>
+
+<h2 class="mb-3 mt-3">Ostatní tickety</h2>
+
+<div *ngFor="let other_ticket of tickets_other" class="card bg-secondary shadow mb-3">
+        <div class="row pt-3 pb-3">
+            <div class="col-md-2 col-sm-12 mt-auto pl-5 mb-3 mb-md-auto">
+                    <h4 class="mb-1 d-flex"> {{ other_ticket.number }}</h4>
+                    <h4 class="mb-1 d-flex"> {{ other_ticket.priority }}</h4>
+                    <h4 class="mb-1 d-flex"> {{ other_ticket.category }}</h4>
+            </div>
+            <div class="col-md-6 col-sm-12 pl-5 mb-3 mb-md-auto">
+                <a routerLinkActive="" [routerLink]="" class=""><h2 class="mb-1"> {{ other_ticket.name }}</h2></a>
+                <div class="container p-0 m-0">
+                    <p class="d-flex"> {{ other_ticket.content }}</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12 text-md-center text-sm-left pl-5 mb-0 mb-md-auto mt-auto">
+                <h4 class="d-flex mb-1"> {{ other_ticket.date }}</h4>
+            </div>
+    
+            <div class="col-md-2 col-sm-12 text-md-center text-sm-left pl-5 mb-0 mb-md-auto mt-auto">
+                <h4 class="d-flex mb-1"> {{ other_ticket.creator }}</h4>
+            </div>
+        </div>
+</div>
