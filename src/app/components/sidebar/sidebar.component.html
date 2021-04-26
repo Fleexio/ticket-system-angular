@@ -6,7 +6,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Brand -->
-    <a class="navbar-brand pt-0" routerLinkActive="active" [routerLink]="['/dashboard']">
+    <a class="navbar-brand pt-0 mb-0 pb-b" routerLinkActive="active" [routerLink]="['/dashboard']">
       <h1 class="display-4">LOGO</h1>
     </a>
     <!-- Collapse -->
@@ -14,12 +14,7 @@
       <!-- Collapse header -->
       <div class="navbar-collapse-header d-md-none">
         <div class="row">
-          <div class="col-6 collapse-brand">
-            <a  routerLinkActive="active" [routerLink]="['/dashboard']">
-              <img src="./assets/img/brand/blue.png">
-            </a>
-          </div>
-          <div class="col-6 collapse-close">
+          <div class="col-12 collapse-close">
             <button type="button" class="navbar-toggler" (click)="isCollapsed=!isCollapsed">
               <span></span>
               <span></span>
@@ -30,7 +25,7 @@
       <!-- Form -->
       <form class="mt-4 mb-3 d-md-none">
         <div class="input-group input-group-rounded input-group-merge">
-          <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
+          <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="#ID Ticketu" aria-label="Search">
           <div class="input-group-prepend">
             <div class="input-group-text">
               <span class="fa fa-search"></span>
@@ -38,12 +33,15 @@
           </div>
         </div>
       </form>
+      <div class="text-center">
+        <p class="">Jméno Příjmení</p>
+      </div>
       <hr class="my-3">
       <!-- Navigation -->
       <ul class="navbar-nav">
           <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
               <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link">
-                  <i class="ni {{menuItem.icon}}"></i>
+                  <spam class="material-icons pr-3">{{ menuItem.icon }}</spam>
                   {{menuItem.title}}
               </a>
           </li>
@@ -51,6 +49,8 @@
       <!-- Divider -->
       <hr class="my-3">
       <!-- Navigation -->
+      <div class="mt-auto">
+      <hr class="my-3 d-lg-block d-md-block d-sm-none d-none">
       <ul class="navbar-nav mb-md-3">
         <li class="nav-item">
           <a class="nav-link" href="">
@@ -58,6 +58,7 @@
           </a>
         </li>
       </ul>
+      </div>
     </div>
   </div>
 </nav>

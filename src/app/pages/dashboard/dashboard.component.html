@@ -1,7 +1,39 @@
+<div class="container-fluid mt-4">
+    <div class="row align-middle justify-content-center">  
+      
+      <div class="col-md-6 mb-3 align-self-center">
+        <h3 class="d-inline">Přehled ticketů</h3>
+      </div>
+
+      <div class="col-md-3 mb-4 align-self-center">
+        <a [routerLink]="['/new-ticket']" routerLinkActive="router-link-active"  class="btn btn-primary active d-block" role="button" aria-pressed="true">Nový ticket</a>
+      </div>
+
+      <div class="col-md-3 mb-3 align-self-center">
+      <form class="d-inline">
+        <div class="input-group input-group-rounded input-group-merge">
+          <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="#ID Ticketu" aria-label="Hledat">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <span class="fa fa-search"></span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+</div>
+
+<div class="container-fluid">
+
+  <app-tickets> </app-tickets>
+</div>
+
+
 <!-- 
-
-
-
 <div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
   <div class="container-fluid">
     <div class="header-body">
