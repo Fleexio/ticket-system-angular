@@ -8,13 +8,18 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Dashboard',  icon: 'ni-tv-2 text-primary', class: '' },
-    { path: '/icons', title: 'Icons',  icon:'ni-planet text-blue', class: '' },
-    { path: '/maps', title: 'Maps',  icon:'ni-pin-3 text-orange', class: '' },
-    { path: '/user-profile', title: 'User profile',  icon:'ni-single-02 text-yellow', class: '' },
-    { path: '/tables', title: 'Tables',  icon:'ni-bullet-list-67 text-red', class: '' },
-    { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '' },
-    { path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '' }
+    { path: '/dashboard', title: 'Tickety',  icon: 'fact_check', class: '' },
+    { path: '/ve-fronte', title: 'Ve frontě',  icon: '', class: 'subcategory pl-4' },
+    { path: '/v-behu', title: 'V běhu',  icon: '', class: 'subcategory pl-4' },
+    { path: '/k-uzavreni', title: 'K uzavření',  icon: '', class: 'subcategory pl-4' },
+    { path: '/hotove', title: 'Hotové',  icon: '', class: 'subcategory pl-4' },
+    { path: '/zrusene', title: 'Zrušené',  icon: '', class: 'subcategory pl-4' },
+    //{ path: '/icons', title: 'Icons',  icon:'ni-planet text-blue', class: '' },
+    //{ path: '/maps', title: 'Maps',  icon:'ni-pin-3 text-orange', class: '' },
+    { path: '/tables', title: 'Kategorie',  icon:'view_list', class: '' },
+    { path: '/user-profile', title: 'Uživatelé',  icon:'people', class: '' },
+    //{ path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '' },
+    //{ path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '' }
 ];
 
 @Component({

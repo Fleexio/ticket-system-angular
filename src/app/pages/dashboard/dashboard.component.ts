@@ -9,11 +9,17 @@ import {
   chartExample2
 } from "../../variables/charts";
 
+
+
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
+
+
+
 export class DashboardComponent implements OnInit {
 
   public datasets: any;
@@ -21,6 +27,7 @@ export class DashboardComponent implements OnInit {
   public salesChart;
   public clicked: boolean = true;
   public clicked1: boolean = false;
+
 
   ngOnInit() {
 
@@ -58,3 +65,4 @@ export class DashboardComponent implements OnInit {
   }
 
 }
+
